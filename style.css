@@ -1,0 +1,105 @@
+/* ねこメーター 公開サイト。外部依存なし・1 ファイルだけ */
+:root {
+  --bg: #fbf8f3;
+  --fg: #2b2622;
+  --muted: #6b625a;
+  --rule: #e2d9cc;
+  --link: #8a5a2b;
+  --card: #fffdf9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1815;
+    --fg: #ece5db;
+    --muted: #a49a8e;
+    --rule: #3a342d;
+    --link: #d9a76c;
+    --card: #221e1a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 48px 16px 96px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 0 0.25em;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 2.5em 0 0.6em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--rule);
+  letter-spacing: 0.02em;
+}
+
+h2:first-of-type { border-top: none; padding-top: 0; }
+
+p, li { margin: 0.7em 0; }
+
+ul { padding-left: 1.3em; }
+
+a { color: var(--link); }
+
+a:hover { text-decoration: none; }
+
+code {
+  font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+  font-size: 0.88em;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  word-break: break-all;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 2.5em;
+}
+
+.lang {
+  font-size: 0.88rem;
+  margin: 0 0 2.5em;
+  color: var(--muted);
+}
+
+.summary {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+footer {
+  margin-top: 4em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* 表紙 */
+.cover h1 { font-size: 2rem; margin-bottom: 0.2em; }
+.cover .tagline { color: var(--muted); margin: 0 0 2.5em; }
+.cover nav a { display: block; margin: 0.6em 0; }

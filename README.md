@@ -5,6 +5,8 @@ GitHub Pages で配信する静的ファイルだけを置く。アプリのソ�
 
 - プライバシーポリシー（日本語）: <https://bananafish0825.github.io/neko-meter/privacy/>
 - Privacy Policy (English): <https://bananafish0825.github.io/neko-meter/privacy/en/>
+- よくある質問（日本語）: <https://bananafish0825.github.io/neko-meter/faq/>
+- FAQ (English): <https://bananafish0825.github.io/neko-meter/faq/en/>
 
 ## 原本
 

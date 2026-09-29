@@ -14,7 +14,7 @@
 <main>
 
 <h1>Neko Meter Privacy Policy</h1>
-<p class="updated">Last updated: 2026-09-22</p>
+<p class="updated">Last updated: 2026-09-29</p>
 <p class="lang"><a href="../">日本語</a></p>
 
 <h2>Summary</h2>
@@ -26,11 +26,14 @@
 <p>Neko Meter does not read, collect, or transmit your name, email address, postal address, phone number, location, contacts, photos, browsing history, keystrokes, or screen contents.</p>
 
 <h2>What is read on your device only</h2>
-<p>To decide how the cat behaves, the app reads the following values once per second. Each is <strong>used on the spot and is never stored or transmitted</strong>.</p>
+<p>For the cat's behaviour and the icon's tooltip (the numbers shown when you hover over it), the app reads the following values (once per second unless noted). Each is <strong>used on the spot and is never stored or transmitted</strong>.</p>
 <ul>
 <li>CPU usage (the delta from <code>os.cpus()</code>)</li>
 <li>Whether the PC is on AC power or on battery</li>
-<li>Battery charge level and whether it is charging</li>
+<li>Battery charge level, whether it is charging, and an estimate of the time left</li>
+<li>Memory usage (<code>os.freemem()</code> and <code>os.totalmem()</code>)</li>
+<li>GPU usage and network download and upload speed (every 2 seconds, with Windows' <code>typeperf</code>; per-process GPU values are only added up. <strong>The app does not read what is sent or where it goes</strong>)</li>
+<li>Free space on the C: drive (every 5 minutes)</li>
 <li>How many seconds the keyboard and mouse have been idle (the Windows idle time; <strong>the app does not capture which keys are pressed</strong>)</li>
 </ul>
 <p>These are device-wide values provided by Windows. None of them identifies a person.</p>
@@ -41,7 +44,7 @@
 <ul>
 <li>whether the cat is hidden (<code>hidden</code>)</li>
 <li>whether the app starts with Windows (<code>openAtLogin</code>)</li>
-<li>the display language (<code>language</code>, either <code>ja</code> or <code>en</code>)</li>
+<li>the display language (<code>language</code>: <code>ja</code>, <code>en</code> or <code>zh</code>)</li>
 <li>whether the first-run notice has been shown (<code>noticeShown</code>)</li>
 </ul>
 <p>It contains no personal information. Uninstalling the app or deleting this file removes it.</p>

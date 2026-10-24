@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FAQ | Neko Meter</title>
-<meta name="description" content="Neko Meter FAQ: what to do when you can't see the cat, how to bring back a hidden cat, how to start with Windows, and more.">
+<meta name="description" content="Neko Meter FAQ: what to do when you can't see the cat, how to bring back a hidden cat, what makes the cat run, notifications, the heaviest app, display language, today's history, and more.">
 <link rel="canonical" href="https://bananafish0825.github.io/neko-meter/faq/en/">
 <link rel="alternate" hreflang="en" href="https://bananafish0825.github.io/neko-meter/faq/en/">
 <link rel="alternate" hreflang="ja" href="https://bananafish0825.github.io/neko-meter/faq/">
@@ -48,13 +48,45 @@
 </ul>
 
 <h2>The cat keeps running</h2>
-<p>It runs when your PC is busy (CPU usage above 60% for ten seconds). When the heavy work ends, it sits. If the PC stays busy for a long time, it sits now and then to catch its breath.</p>
+<p>It runs when your PC is busy (CPU or GPU usage above 60% for ten seconds), so it also runs while you game or export a video. When the heavy work ends, it sits. If the PC stays busy for a long time, it sits now and then to catch its breath.</p>
+
+<h2>Can I change what makes the cat run?</h2>
+<p>Yes. Right-click the cat and choose from "The cat runs on":</p>
+<ul>
+<li>CPU or GPU, whichever is higher (the default)</li>
+<li>CPU</li>
+<li>GPU (to watch only the GPU while you game)</li>
+<li>Memory (to know when memory is tight)</li>
+</ul>
+<p>This only changes what makes the cat run. The numbers in the tooltip stay the same.</p>
 
 <h2>Does it work on a desktop PC without a battery?</h2>
 <p>Yes. The power reactions (plugging in, unplugging, battery level) are skipped, and the cat reacts to how busy your PC is, whether you are away, and the time of day.</p>
 
 <h2>Can I see numbers (battery level, CPU usage)?</h2>
 <p>Yes. Hover the pointer over the cat icon to see CPU, memory and GPU usage, the battery level with an estimate of the time left, free space on the C: drive, and network download and upload speed. Right-click the cat and choose "Today's history" to open a small window that graphs today's CPU, GPU, memory, battery and network speed as per-minute averages, with a band showing when the cat ran or slept.</p>
+
+<h2>What is the app name shown while the cat runs?</h2>
+<p>While the cat is running, hover over the icon to see the name of the app using the most CPU or memory right now (for example: Top: chrome.exe (CPU 31%)). The same line is added to the notification you get when the cat keeps running.</p>
+<ul>
+<li>The name is only displayed; it is never saved or sent. Window titles and open files are not read</li>
+<li>To turn it off, untick "Show the heaviest app" in the right-click menu. The name is then neither shown nor measured</li>
+</ul>
+
+<h2>Is today's history saved anywhere?</h2>
+<p>No. The values are kept only in the app's memory; they are not written to a file or sent anywhere. They are cleared when the date changes or when you quit the app. The window closes when you close it and never opens at startup.</p>
+
+<h2>When do I get notifications, and can I turn them off?</h2>
+<p>For the times you are not looking at the cat, Windows notifications tell you:</p>
+<ul>
+<li>When the battery is low: once each when it drops below 20% and 10% while not charging. Plugging in the charger resets this</li>
+<li>When the cat keeps running: once when the cat has run for five minutes straight on the load you chose, saying what is busy and how much (for example CPU 92%). Not again for 30 minutes after things calm down</li>
+<li>When C: is running low: once when free space drops below 10% or 10 GB. Not again until it is back above both 15% and 15 GB</li>
+</ul>
+<p>Right-click the cat and untick any of them under "Notifications". Each one can be turned off on its own.</p>
+
+<h2>How do I change the display language?</h2>
+<p>Right-click the cat and choose from "Language". There are 13: 日本語, English, 简体中文, 繁體中文, 한국어, Español, العربية, Français, Deutsch, Português (Brasil), Italiano, Русский and Türkçe. At first the app follows your Windows language (English if yours is not on the list).</p>
 
 <h2>How do I uninstall it?</h2>
 <p>Right-click "Neko meter" in the Start menu and choose "Uninstall", or remove it from Settings &gt; Apps. Its saved settings (whether the cat is hidden, the language and so on) are removed too.</p>

@@ -103,3 +103,23 @@ footer {
 .cover h1 { font-size: 2rem; margin-bottom: 0.2em; }
 .cover .tagline { color: var(--muted); margin: 0 0 2.5em; }
 .cover nav a { display: block; margin: 0.6em 0; }
+.cover .tagline + .lang { margin-top: -1.8em; }
+.store {
+  display: inline-block;
+  padding: 0.55em 1.3em;
+  border-radius: 8px;
+  background: var(--link);
+  color: var(--bg);
+  font-weight: 600;
+  text-decoration: none;
+}
+.store:hover { opacity: 0.88; }
+.note { color: var(--muted); font-size: 0.88rem; margin-top: 0.4em; }
+figure { margin: 1.4em 0; }
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.4em; }

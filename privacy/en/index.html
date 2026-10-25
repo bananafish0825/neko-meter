@@ -14,7 +14,7 @@
 <main>
 
 <h1>Neko Meter Privacy Policy</h1>
-<p class="updated">Last updated: 2026-10-24</p>
+<p class="updated">Last updated: 2026-10-25</p>
 <p class="lang"><a href="../">日本語</a></p>
 
 <h2>Summary</h2>
@@ -36,6 +36,7 @@
 <li>Free space on the C: drive (every 5 minutes)</li>
 <li>The name of the running app and its CPU and memory use (only while the cat is running because of load: when it starts running and then every 60 seconds, with Windows' <code>typeperf</code>. The executable name of the heaviest app is shown in the tooltip and notification. <strong>It is only displayed — never stored, transmitted, or kept in the daily history.</strong> The app does not read window titles, open files, or what is inside an app)</li>
 <li>How many seconds the keyboard and mouse have been idle (the Windows idle time; <strong>the app does not capture which keys are pressed</strong>)</li>
+<li>Whether a new version downloaded by the Microsoft Store is waiting to be installed (Microsoft Store version only: 1 minute after start and then every 3 hours, the app reads the app-registration records in the Windows event log "Microsoft-Windows-AppXDeploymentServer/Operational". Only Neko Meter's own records are used; records about other apps are discarded)</li>
 </ul>
 <p>These are device-wide values provided by Windows. None of them identifies a person.</p>
 
@@ -52,6 +53,8 @@
 <li>whether the heavy app's name is shown (<code>showHeavyApp</code>; the name itself is not stored)</li>
 </ul>
 <p>It contains no personal information. Uninstalling the app or deleting this file removes it.</p>
+
+<p>Only when you choose "Update and restart" in the menu on the Microsoft Store version, the result is written to a temporary file, <code>store-update.json</code> (in the per-package <code>LocalState</code> folder). It contains only the time, Neko Meter's package name, whether the update was installed, whether the app was restarted, and the Windows error message if something failed. The cat reads it the next time it starts and deletes it right away.</p>
 
 <h2>Sharing with third parties</h2>
 <p>None. The app contains no code for any external server or service to send data to.</p>

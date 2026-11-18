@@ -14,7 +14,7 @@
 <main>
 
 <h1>ねこメーター プライバシーポリシー</h1>
-<p class="updated">最終更新: 2026-10-25</p>
+<p class="updated">最終更新: 2026-11-18</p>
 <p class="lang"><a href="./en/">English</a></p>
 
 <h2>まとめ</h2>
@@ -34,7 +34,7 @@
 <li>メモリの使用率（<code>os.freemem()</code> と <code>os.totalmem()</code>）</li>
 <li>GPU の使用率とネットワークの受信・送信の速さ（Windows の <code>typeperf</code> で 2 秒ごと。GPU はプロセスごとの値を合計して使うだけです。<strong>通信の中身や接続先は読みません</strong>）</li>
 <li>C: ドライブの空き容量（5 分ごと）</li>
-<li>動いているアプリの名前と、その CPU・メモリの使用量（猫が負荷で走っている間だけ、走り出したときと 60 秒ごとに Windows の <code>typeperf</code> で読みます。いちばん重いアプリの実行ファイル名を tooltip と通知に表示します。<strong>表示するだけで、保存も送信もせず、今日の推移にも残しません。</strong>ウィンドウの題名・開いているファイル・アプリの中身は読みません）</li>
+<li>動いているアプリの名前と、その CPU・メモリ・GPU の使用量（猫が負荷で走っている間だけ、走り出したときと 60 秒ごとに Windows の <code>typeperf</code> で読みます。GPU の値は、プロセス ID でアプリの名前に結び付けるためだけに使います。いちばん重いアプリの実行ファイル名を tooltip と通知に表示します。<strong>表示するだけで、保存も送信もせず、今日の推移にも残しません。</strong>ウィンドウの題名・開いているファイル・アプリの中身は読みません）</li>
 <li>キーボードとマウスが操作されていない秒数（Windows の無操作時間。<strong>何を押したかは取得しません</strong>）</li>
 <li>Microsoft Store から届いた新しい版が、入れられるのを待っているか（Microsoft Store 版だけ。起動 1 分後と 3 時間ごとに、Windows のイベントログ「Microsoft-Windows-AppXDeploymentServer/Operational」にあるアプリの登録の記録を読みます。使うのはねこメーター自身の記録だけで、ほかのアプリの記録は捨てます）</li>
 </ul>
